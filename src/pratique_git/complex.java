@@ -10,4 +10,36 @@ package pratique_git;
  */
 public class complex {
     
+    private double reel;
+    private double imaginaire;
+
+    public complex(double reel, double imaginaire) {
+        this.reel = reel;
+        this.imaginaire = imaginaire;
+    }
+
+    public complex() {
+    }
+    public double getReel() {
+        return reel;
+    }
+
+    public void setReel(double reel) {
+        this.reel = reel;
+    }
+
+    public double getImaginaire() {
+        return imaginaire;
+    }
+
+
+    @Override
+    public String toString() {
+        return "complex{" + "reel=" + reel + ", imaginaire=" + imaginaire + '}';
+    }
+
+    public complex opposer(complex z){
+        
+        return new complex(-z.reel, -z.imaginaire) ;        
+    }
 }
