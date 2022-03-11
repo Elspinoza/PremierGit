@@ -42,4 +42,8 @@ public class complex {
         
         return new complex(-z.reel, -z.imaginaire) ;        
     }
+    
+    public complex addition( complex a1, complex a2){
+        return new complex(a1.reel+a2.reel, a1.imaginaire+a2.imaginaire);
+    }
 }
