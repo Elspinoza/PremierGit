@@ -47,4 +47,8 @@ public class complex {
         return new complex(c.reel, -c.imaginaire);
     }
     
+    public complex soustraction(complex s1, complex s2){
+        return new complex(s1.reel - s2.reel, s1.imaginaire - s2.imaginaire);
+    }
+    
 }
