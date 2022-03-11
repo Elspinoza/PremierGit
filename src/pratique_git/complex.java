@@ -42,4 +42,9 @@ public class complex {
         
         return new complex(-z.reel, -z.imaginaire) ;        
     }
+    
+    public complex conjuguer (complex c){
+        return new complex(c.reel, -c.imaginaire);
+    }
+    
 }
